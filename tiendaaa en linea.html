@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <title>Tienda de Productos</title>
+
+    <style>
+        Body {
+            Font-family: Arial, sans-serif;
+            Margin: 0;
+            Background: #f2f2f2;
+        }
+
+        Header {
+            Background: #222;
+            Color: white;
+            Text-align: center;
+            Padding: 25px;
+        }
+
+        .productos {
+            Display: grid;
+            Grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            Gap: 20px;
+            Padding: 30px;
+            Max-width: 1200px;
+            Margin: auto;
+        }
+
+        .producto {
+            Background: white;
+            Border-radius: 12px;
+            Padding: 15px;
+            Text-align: center;
+            Box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .producto img {
+            Width: 100%;
+            Height: 220px;
+            Object-fit: cover;
+            Border-radius: 10px;
+        }
+
+        .producto h2 {
+            Margin: 12px 0 8px;
+        }
+
+        .precio {
+            Font-size: 20px;
+            Font-weight: bold;
+            Margin: 10px;
+        }
+
+        Button {
+            Background: #007bff;
+            Color: white;
+            Border: none;
+            Padding: 10px 18px;
+            Border-radius: 8px;
+            Cursor: pointer;
+        }
+
+        Button:hover {
+            Background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bariedades Oto</h1>
+    <p>Encuentra tus productos de calidad y al mejor precio en Bariedades Oto envios a todo
+    el pais de Guatemala</p>
+</header>
+
+<section class=”productos”>
+
+    <!—Audífonos 
+    <div class=”producto”>
+        <img src=https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80
+             Alt=”Audífonos”>
+        <h2>Audífonos</h2>
+        <p>Audífonos modernos y de excelente calidad.</p>
+        <div class=”precio”>Q150.00</div>
+        <button>Comprar</button>
+    </div>
+
+    <!—Tenis deportivos 
+    <div class=”producto”>
+        <img src=https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80
+             Alt=”Tenis deportivos”>
+        <h2>Tenis deportivos</h2>
+        <p>Tenis cómodos para deporte y uso diario.</p>
+        <div class=”precio”>Q350.00</div>
+        <button>Comprar</button>
+    </div>
+
+    <!—Lámpara 
+    <div class=”producto”>
+        <img src=https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80
+             Alt=”Lámpara”>
+        <h2>Lámpara</h2>
+        <p>Lámpara moderna para tu hogar o habitación.</p>
+        <div class=”precio”>Q200.00</div>
+        <button>Comprar</button>
+    </div>
+
+    <!—Cafetera 
+    <div class=”producto”>
+        <img src=https://images.unsplash.com/photo-1517668808823-d9f6e4b4c2f4?auto=format&fit=crop&w=600&q=80
+             Alt=”Cafetera”>
+        <h2>Cafetera</h2>
+        <p>Prepara un delicioso café fácilmente.</p>
+        <div class=”precio”>Q450.00</div>
+        <button>Comprar</button>
+    </div>
+
+    <!—Reloj 
+    <div class=”producto”>
+        <img src=https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80
+             Alt=”Reloj de muñeca”>
+        <h2>Reloj de muñeca</h2>
+        <p>Reloj elegante para cualquier ocasión.</p>
+        <div class=”precio”>Q300.00</div>
+        <button>Comprar</button>
+    </div>
+
+    <!—Mochila 
+    <div class=”producto”>
+        <img src=https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80
+             Alt=”Mochila escolar”>
+        <h2>Mochila escolar</h2>
+        <p>Mochila resistente y práctica para estudiar.</p>
+        <div class=”precio”>Q180.00</div>
+        <button>Comprar</button>
+    </div>
+
+</section>
+
+</body>
+</html>
